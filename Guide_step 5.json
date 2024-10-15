@@ -1,0 +1,78 @@
+{
+  "id": 5,
+  "tasks": [
+    {
+      "id": 1,
+      "description": "users set safety functions and requirements for their product across the entire lifecycle",
+      "instructions": [
+        "GPT shows information in 'step procedure'.",
+        "GPT show example in 'example_risk_and_requirements'.",
+        "GPT tells users to focus on 'safety_function_and_requirement_considerations'.",
+        "GPT brainstorms with users to come up with the appropriate safety functions and requirements for their product."
+      ]
+    }
+  ],
+  "knowledge_base": {
+    "step_procedure": [
+      {
+        "step": 1,
+        "description": "Based on the risk identification and assessment in step 4 (Safety risk assessment and acceptance criteria), users can choose the most severe risks with the highest frequency to tackle."
+      },
+      {
+        "step": 2,
+        "description": "Based on the human and environment analysis in step 1 (Stakeholders and their needs) and 2 (System concept, system definition and system environment) and the focused objective in step 3 (System (safety) objectives), users can brainstorm functions to limit the risks."
+      },
+      {
+        "step": 3,
+        "description": "specify the details of the product functions or requirements based on regulations and standards."
+      }
+    ],
+    "requirement_structure": {
+      "explanation": "The requirement statement should be 1 sentence, including these components:",
+      "components": {
+        "function_or_capability": "Function or capability is a need which must be achieved, and it is the central part of a requirement statement.",
+        "condition": "Condition refers to the condition to achieve the expected function or capability. Conditions need to be measurable, qualitative or quantitative.",
+        "constraints": "Constraints for the expected function must also be specified. A constraint may come from the interface, physical size, law, current technology, use, user, operator, environment, or time limitations."
+      }
+    },
+    "example_risk_and_requirements": {
+      "risk": "The braking system may fail to provide adequate stopping power during high-speed descents, leading to potential accidents and injuries.",
+      "users needs": "The users need a reliable breaking system to stop the bicycle.",
+      "system objectives": "operational safety should be the top priority regardless the cost.",
+      "product_requirement": "The bicycle's braking components shall be made from high-quality, heat-resistant materials, maintaining performance at -10 to +50°C during 1000-meter descents at 30 km/h, while complying with ISO 4210-2 standards, not exceeding 500 grams per assembly, and ensuring compatibility with standard bicycle frames.",
+      "capability": "The bicycle's braking components shall be made from high-quality, heat-resistant materials.",
+      "condition": "maintaining performance at -10 to +50°C during 1000-meter descents at 30 km/h.",
+      "constraints": "not exceeding 500 grams per assembly"
+    },
+    "safety_function_and_requirement_considerations": {
+      "description": "Safety functions and safety requirements shall include the following aspects:",
+      "aspects": [
+        {
+          "name": "External Environment",
+          "description": "Considerations within the environment of the system under consideration",
+          "example": "Functional characteristics of external interfaces"
+        },
+        {
+          "name": "System Level",
+          "description": "Considerations within the system under consideration",
+          "example": "Functional description of subsystems or internal interfaces"
+        },
+        {
+          "name": "Subsystem Level",
+          "description": "Considerations within the subsystems of the system under consideration",
+          "example": "Functional description of significant components identified in subsystems"
+        },
+        {
+          "name": "Historical Analysis",
+          "description": "Considerations from the past",
+          "example": "Functional analysis of past incidents and accidents"
+        },
+        {
+          "name": "Future Scenarios",
+          "description": "Considerations for the future",
+          "example": "Future operational scenarios"
+        }
+      ]
+    }
+  }
+}

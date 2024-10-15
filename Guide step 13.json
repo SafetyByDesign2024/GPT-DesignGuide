@@ -1,0 +1,156 @@
+{
+  "tasks": [
+    {
+      "id": 0,
+      "name": "Choose Focus Tasks",
+      "instruction": [
+        "Users can choose to focus on either task 1, 2, 3, 4, or 5.",
+        "In an ideal situation, all tasks should be completed.",
+        "However, in this training context, completing a few tasks is acceptable."
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Analyze Environmental and Cultural Hazards",
+      "instruction": [
+        "GPT will ask users to describe different use environments of their product.",
+        "GPT will continue to describe the key features of those environments based on information from 'example of different environments of a bike'.",
+        "GPT will ask the user to consider what hazards they would face in those environments and how they would address them."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Assess Health Hazards for Operators",
+      "instruction": "GPT will ask users to describe health risks for system operators, considering both short-term and long-term exposure to various elements of the system. GPT provide examples of health hazards presented in 'health_hazards'."
+    },
+    {
+      "id": 3,
+      "name": "Evaluate Subsystem Workforce Requirements",
+      "instruction": "GPT ask users to describe the interaction between humans and their product. GPT can guide users to create detailed scenarios (e.g., maintenance tasks) to see what potential problems might arise and how they might be solved."
+    },
+    {
+      "id": 4,
+      "name": "Incorporate Historical Incident Lessons",
+      "instruction": "GPT will ask users to research on the internet about the similar incidents of their product."
+    },
+    {
+      "id": 5,
+      "name": "Plan for Future Skill Development",
+      "instruction": "GPT can brainstorm with users to see how future trends and technological advancements will change the skills of the users. see 'trending_advanced_technologies'."
+    }
+  ],
+  "knowledge_base": {
+    "example of different environments of a bike": {
+      "environments": [
+        {
+          "name": "Carried on a Train",
+          "key_features": [
+            "Space Constraints: Limited space on crowded trains.",
+            "Crowds: Busy stations, making it hard to maneuver.",
+            "Restrictions: No riding in stations, must walk with or carry the bike.",
+            "User Behavior: Rushed users, navigating tight areas."
+          ]
+        },
+        {
+          "name": "Biking in a Park",
+          "key_features": [
+            "Open Spaces: Wide paths, some paved, some rough.",
+            "Pedestrian Traffic: Shared space with walkers, kids, and pets.",
+            "Relaxed Atmosphere: Leisurely pace, focused on recreation.",
+            "Environmental Factors: Weather and seasonal changes affect terrain."
+          ]
+        },
+        {
+          "name": "Mountain Biking (Rough Terrain)",
+          "key_features": [
+            "Challenging Terrain: Rocky, uneven, steep trails.",
+            "Remote: Far from repair services, self-sufficiency needed.",
+            "Physical Demand: High exertion, requiring endurance.",
+            "Safety Concerns: Higher injury risk, protective gear required."
+          ]
+        },
+        {
+          "name": "Stored at Home",
+          "key_features": [
+            "Limited Space: Need compact storage (closet, small apartment).",
+            "Accessibility: Easy to store and retrieve, possibly foldable.",
+            "Indoor Protection: Must be clean to avoid damaging home surfaces.",
+            "Security: Prone to theft in shared spaces, needs locks."
+          ]
+        },
+        {
+          "name": "Bike for Commuting in Rainy/Wet Conditions",
+          "key_features": [
+            "Wet Surfaces: Slippery roads, slip-resistant tires needed.",
+            "Visibility: Reduced visibility, requires lights and reflectors.",
+            "Waterproof Gear: Users need rain-resistant clothing and bags.",
+            "Maintenance: Frequent cleaning to prevent rust and wear."
+          ]
+        }
+      ]
+    },
+    "health_hazards": {
+      "types": [
+        {
+          "name": "Physical Health Hazards",
+          "description": "Affect the body through forces or conditions",
+          "examples": [
+            "Poor posture while cycling",
+            "Noise from traffic",
+            "Vibration from rough terrain",
+            "Extreme temperatures during outdoor rides"
+          ]
+        },
+        {
+          "name": "Chemical Health Hazards",
+          "description": "Caused by exposure to harmful chemicals",
+          "examples": [
+            "Toxic fumes from vehicle exhaust",
+            "Skin irritants from cleaning solvents used in maintenance"
+          ]
+        },
+        {
+          "name": "Biological Health Hazards",
+          "description": "Caused by organisms",
+          "examples": [
+            "Infections from contaminated water splashed during rides",
+            "Allergies from pollen while cycling outdoors"
+          ]
+        },
+        {
+          "name": "Environmental Health Hazards",
+          "description": "Arise from environmental conditions",
+          "examples": [
+            "Air pollution in urban cycling routes",
+            "Sun exposure during long rides"
+          ]
+        },
+        {
+          "name": "Psychosocial Health Hazards",
+          "description": "Impact mental health",
+          "examples": [
+            "Stress from navigating heavy traffic",
+            "Fatigue from long-distance cycling"
+          ]
+        },
+        {
+          "name": "Mechanical Health Hazards",
+          "description": "Related to machinery or systems",
+          "examples": [
+            "Crashes due to equipment failure",
+            "Pinch points in bike chains during maintenance"
+          ]
+        }
+      ]
+    },
+    "trending_advanced_technologies": [
+      "Autonomous Vehicles",
+      "Artificial Intelligence (AI) & Machine Learning",
+      "Internet of Things (IoT)",
+      "Renewable Energy Integration",
+      "Smart Dust",
+      "Advanced Materials",
+      "Augmented Reality (AR) & Virtual Reality (VR)"
+    ]
+  }
+}

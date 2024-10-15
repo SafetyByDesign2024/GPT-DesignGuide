@@ -1,0 +1,113 @@
+{
+  "id": 2,
+  "step_overview": {
+    "introduction": "This step focuses on developing a clear product vision through concept design and considering environmental factors.",
+    "main_components": [
+      {
+        "name": "Product Concept Design",
+        "description": "Develop operational, technical, and functional concepts to understand how the product will be used, what systems are needed, and what functions they'll perform."
+      },
+      {
+        "name": "Environmental Factors",
+        "description": "Analyze physical (e.g., weather, working conditions) and non-physical (e.g., regulations, policies) factors that could affect the product."
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Product Concept Design",
+      "subtasks": [
+        {
+          "id": 1.1,
+          "name": "Operational Concept",
+          "description": "Create a flowchart showing the sequence of interactions between users and the product, identifying key interaction points.",
+          "steps": [
+            "Brainstorm all possible interactions",
+            "Narrow down to the main interactions"
+          ],
+          "diagram": {
+            "type": "Human-Product Interaction Diagram",
+            "description": "A flowchart representing how users interact with the product, highlighting critical interaction points.",
+            "image": "HPI diagram.png"
+          }
+        },
+        {
+          "id": 1.2,
+          "name": "Technical Concept",
+          "description": "Describe the technical systems and subsystems needed using a hierarchical representation of the product.",
+          "steps": [
+            "GPT provides preset components (e.g., wheels, frame for a bike)",
+            "Users provide details about components",
+            "GPT helps modify components based on users' needs"
+          ],
+          "diagram": {
+            "type": "Tree Diagram",
+            "description": "A graphical tool displaying the hierarchical structure of elements, illustrating how different components are related.",
+            "image": "HPI diagram.png"
+          }
+        },
+        {
+          "id": 1.3,
+          "name": "Functional Concept",
+          "description": "Describe the functions that the systems will perform.",
+          "steps": [
+            "Users choose parts of the technical concept to translate into a functional diagram",
+            "GPT suggests a functional concept based on the chosen components",
+            "Users review and modify the functional components as necessary"
+          ],
+          "diagram": {
+            "type": "Tree Diagram",
+            "description": "A graphical tool displaying the hierarchical structure of elements, illustrating how different components are related.",
+            "image": "HPI diagram.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Identify and Reflect on Environmental Factors",
+      "description": "Guide users to identify how environmental factors (both physical and non-physical) can impact the product.",
+      "factors": [
+        {
+          "type": "Physical",
+          "examples": ["Weather", "Working conditions"]
+        },
+        {
+          "type": "Non-physical",
+          "examples": ["Regulations", "Policies"]
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "operational": [
+      "Does the diagram include main features like controls, displays, and feedback mechanisms?",
+      "Are critical user interaction points like start, stop, and adjustment clearly highlighted?",
+      "Does the diagram show how to handle common user/product errors?",
+      "Have you tested if any steps in the user flow cause confusion?",
+      "Can you simplify the diagram by removing any redundant or unnecessary steps?",
+      "Does the diagram show a logical sequence of user interactions?"
+    ],
+    "technical": [
+      "Have we considered any technical concept to ensure the safety of the users?",
+      "Does the technical concept have elements to handle emergency situations?",
+      "Does the diagram include basic features and functions such as controls, safety, and feedback mechanisms?",
+      "How well does the technical concept comply with relevant safety standards and regulations?",
+      "How well does the technical concept integrate with existing systems and infrastructure?",
+      "How well does the diagram cover different feature mechanisms, from prepared-to-use to maintenance and disposal?",
+      "Can the technical concept diagram scale efficiently as demand increases?",
+      "Does the diagram cover subsystems and their integration points?"
+    ],
+    "functional": [
+      "Does the functional concept address user needs?",
+      "Does the functional concept cover operational contexts (normal use, edge cases, and failure modes)?",
+      "Does the functional concept account for error detection and handling?",
+      "How well are the interdependencies between different functions defined?",
+      "How well does the functional concept align with user expectations for quality?",
+      "How well does the functional concept handle errors and exceptions?",
+      "Can the functional concept diagram scale efficiently as demand increases?",
+      "Does the diagram cover subsystems and their integration points?"
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{//testing
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Identify Stakeholders Across Product Life Cycle",
+      "instructions": [
+        "Present the eight product life cycle stages to the user.",
+        "Provide the categories and definitions of stakeholder categories.",
+        "Guide users to identify stakeholders according to these categories, ensuring they cover multiple stages."
+      ],
+      "notes": "Make sure past, environment, and future stakeholders are identified, and stakeholders from multiple stages are included. Share examples of stakeholders only when users ask or have trouble."
+    },
+    {
+      "id": 2,
+      "title": "Determine Product Requirements from Stakeholders",
+      "instructions": "Guide users to dive deep into either stakeholder's needs, interests, or relationships with other stakeholders. These aspects can then be translated into product requirements. Ask users to choose which aspect to choose first.",
+      "subtasks": [
+        {
+          "id": 2.1,
+          "title": "Analyze Stakeholder's needs",
+          "instructions": [
+            "First, provide the definition of needs",
+            "Provide a structure of a clear need statement."
+          ]
+        },
+        {
+          "id": 2.2,
+          "title": "Analyze Stakeholder's Interest"
+        },
+        {
+          "id": 2.3,
+          "title": "Analyze Stakeholder's Relationship"
+        }
+        {
+          "id": 2.4,
+          "title": "Translate to Requirement Statements in the given Format"
+        }
+      ]
+    }
+  ],
+  "knowledge_base": {
+    "product_life_cycle_stages": [
+      {"id": 1, "title": "Research on users, market, and regulations"},
+      {"id": 2, "title": "Come up with a technical, operational, and functional concept"},
+      {"id": 3, "title": "Get goals and objectives for the product"},
+      {"id": 4, "title": "Risk analysis and function formation"},
+      {"id": 5, "title": "Detailed technical design"},
+      {"id": 6, "title": "Manufacturing"},
+      {"id": 7, "title": "Use and maintenance", "default": true},
+      {"id": 8, "title": "Recycle"}
+    ],
+    "stakeholder_categories": [
+      {
+        "id": 1,
+        "category": "Environment Stakeholders",
+        "definition": "People who have the power to influence the landscape and environment of the system under consideration",
+        "examples": [
+          {
+            "type": "Authorities",
+            "description": "Think about city planners and transportation authorities who influence urban mobility policies."
+          },
+          {
+            "type": "Regulators",
+            "description": "Groups like the Department of Transportation or environmental agencies might set standards your bike needs to meet."
+          },
+          {
+            "type": "Urban Developers",
+            "description": "Those working on infrastructure projects that could affect bike usage in the city."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "category": "Direct Interactors",
+        "definition": "People who interact directly with the system under consideration",
+        "examples": [
+          {
+            "type": "Users",
+            "description": "Urban commuters, casual city riders, and perhaps delivery services using bikes for quick urban deliveries."
+          },
+          {
+            "type": "Retailers and Distributors",
+            "description": "Businesses that will sell your bike or parts of it."
+          },
+          {
+            "type": "Service Providers",
+            "description": "Bike maintenance shops and perhaps app developers for any smart features integrated into the bike."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "category": "Subsystem Interactors",
+        "definition": "People who build or manage the sub-systems",
+        "examples": [
+          {
+            "type": "Component Suppliers",
+            "description": "Manufacturers of bike parts like frames, tires, brakes, and smart technology components."
+          },
+          {
+            "type": "Maintenance Services",
+            "description": "Services that specialize in maintaining and repairing specific components, especially if you include unique features."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "category": "Past Stakeholders",
+        "definition": "People who used to interact with the system under consideration",
+        "examples": [
+          {
+            "type": "Previous Customers",
+            "description": "People who have bought city bikes before can offer insights into what worked well and what could be improved."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "category": "Future Stakeholders",
+        "definition": "New stakeholders will interact with the system under consideration in the future",
+        "examples": [
+          {
+            "type": "Potential Customers",
+            "description": "Consider groups that are not currently using bikes for urban commuting but might be interested in the future, like those concerned with sustainability or seeking alternatives to public transport."
+          }
+        ]
+      }
+    ],
+    "needs": {
+      "definition": "The goals and wishes of stakeholders that the product must satisfy.",
+      "statement_structure": {
+        "format": "[A user] needs [need] in order to accomplish [goal].",
+        "example": "[Alieda, a multitasking, tech-savvy mother of 2] needs [to drive her two children to school quickly by a bike] in order to [spend more time working on her startup]"
+      }
+    }
+  },
+  "requirement_statement_format": {
+    "description": "Requirement statements should be formulated using the following structure:",
+    "components": [
+      {
+        "name": "Function",
+        "description": "What must be achieved"
+      },
+      {
+        "name": "Condition",
+        "description": "The condition under which the function must be achieved"
+      },
+      {
+        "name": "Constraints",
+        "description": "The limitations or restrictions that must be adhered to while fulfilling the requirement"
+      }
+    ],
+    "example": "The system [Function: shall provide real-time traffic updates] [Condition: when the user is navigating] [Constraints: without compromising battery life or data usage]."
+  }
+}

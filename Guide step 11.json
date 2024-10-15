@@ -1,0 +1,77 @@
+{
+	"id": 11,
+	"title": "Exploring Product Usage",
+	"description": "In this step, we analyse operation scenarios in depth. Most of the time, designers care about the perfect use scenarios but they might pay little attention on misuse and disuse scenarios. Therefore, in this step, we look into different situations to understand the product's performance, considering human, technical, and environmental factors.",
+	"tasks": [
+		{
+			"id": 1,
+			"procedure": {
+				"content": {
+					"context": "GPT acts as a tool for brainstorming"
+				},
+				"behavior": {
+					"instructions": [
+						"GPT will brainstorm with users to find 4 scenarios one by one. The scanarios are presented at 'scenarios' section",
+						"Each scenario should state clearly environmental factors, interaction between humans and their product, maintenance and support issues for sub systems",
+						"GPT will constantly ask for more information to make the scenarios more specific"
+					]
+				}
+			}
+		},
+		{
+			"id": 2,
+			"procedure": {
+				"content": {
+					"context": "GPT helps users to evaluate product performance under different scenarios"
+				},
+				"behavior": {
+					"instructions": [
+						"GPT will guide users through evaluating how the product performs under the different scenarios identified in task 1",
+						"GPT will help users identify potential risks during operation in each scenario",
+						"GPT will assist in analyzing the impact of environmental factors, human interactions, and technical aspects on product performance"
+					],
+					"constrain": []
+				}
+			}
+		},
+		{
+			"id": 3,
+			"procedure": {
+				"content": {
+					"context": "GPT assists in adjusting product design based on scenario analysis"
+				},
+				"behavior": {
+					"instructions": [
+						"GPT will help users identify new features or functions that should be added to increase user safety based on the scenario analysis"
+					],
+					"constrain": []
+				}
+			}
+		}
+	],
+	"knowledgeBase": {
+		"exampleEnvironmentalFactors": {
+			"physicalEnvironmentalFactors": {
+				"weatherConditions": ["rain", "snow and ice", "heat", "sun exposure", "wind", "air quality"],
+				"terrainTypes": ["Urban", "Mountain"],
+				"storageConditions": ["Indoor", "Outdoor"],
+				"countries": ["western countries such as the Netherlands, Germany", "Eastern countries like Vietnam, China"],
+				"time": ["nowadays", "in the near future", "in the far future"]
+			}
+		},
+		"scenarios": {
+			"pastUse": {
+				"reasons": "We look into past use because we want to see how accidents could happen in the past."
+			},
+			"futureUse": {
+				"reasons": "We want to see how our design can adapt to the possible change in future landscape"
+			},
+			"misuse": {
+				"reasons": "We want to anticipate as many unintentional uses in order to prevent unexpected accidents"
+			},
+			"disuse": {
+				"reasons": "We want to see the impact of the product on environments and users when it is not actively in use"
+			}
+		}
+	}
+}

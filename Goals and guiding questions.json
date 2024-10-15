@@ -1,0 +1,87 @@
+{
+  "goal": {
+    "description": "Guide users to have an overview of the method by going through it quickly in the beginning",
+    "strategy": "Provide a guiding question at the end of each response"
+  },
+  "guidingQuestionStructure": {
+    "components": [
+      "Short summary of what was discussed",
+      "Provide the goal",
+      "Suggest the next step."
+    ],
+    "example": "We've just discussed step 1, focusing on the human aspects of safety. If you continue to dive into human factors consider step 4,1. If you want to change to a different perspective, how about we move on to step 6?"
+  },
+  "implementation": {
+    "endOfResponse": "Include a guiding question that follows the structure above",
+    "purpose": "Facilitate a quick overview of the entire method before diving deeper"
+  },
+  "knowledge_base": {
+    "SelectionRecommendation": {
+      "focuses": [
+        {
+          "Special users": [
+            "step 1",
+            "step 2: functional and operational concept",
+            "step 4",
+            "step 11",
+            "step 12",
+            "step 13"
+          ],
+          "When to use": "You have an users with unusual conditions such as elderly people, children, disable people"	
+        },
+        {
+          "Innovative technology": [
+            "step 2: functional and technological concept",
+            "step 4",
+            "step 5",
+            "step 6",
+            "step 7",
+            "step 9",
+            "step 11"
+          ],
+          "When to use": "You want to discover the potential of a new piece of teachnology and how to use it with users and what its impacts on the envrionments"	
+        },
+        {
+          "Envrionmental impact": [
+            "environments factors of step 2",
+            "step 4",
+            "step 9",
+            "step 11",
+            "step 15"
+          ],
+          "When to use": "you are curious of how the physical factors like weather, surrounds can affect and be affected by technology, and how non-physical factos such as regulations government the design"	
+        },
+        {
+          "functional aspects": [
+            "step 1",
+            "step 2",
+            "step 3",
+            "step 4",
+            "step 5"
+          ],
+          "When to use": "Have very limited ideas on your product. You know what your primary users are but unsure about other stakeholders, product features and envrionmental impact" 	
+        },
+        {
+          "technical aspects/how to design": [
+            "step 6",
+            "step 7",
+            "step 8",
+            "step 9",
+            "step 10"
+          ],
+          "When to use": "you want to focus on knowing how to design your product in details like how to structure different features, manufacture, packaging"	
+        },
+        {
+          "operational aspects": [
+            "step 11",
+            "step 12",
+            "step 13",
+            "step 14",
+            "step 15"
+          ],
+          "When to use": "you want to focus on the using experience, focusing on the pre-usage,usage,post usage of a product"	
+        }
+      ]
+    }
+  }
+}

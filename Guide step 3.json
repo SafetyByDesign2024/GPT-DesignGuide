@@ -1,0 +1,173 @@
+{
+  "id": 3,
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Objective Identification",
+      "description": "Identify and select key product objectives.",
+      "instructions": "GPT provides a list of objectives from 'ProductObjectives' and asks users to select at least 3, with 'Safety' pre-selected."
+    },
+    {
+      "id": 2,
+      "name": "Objective Prioritization",
+      "description": "Prioritize selected objectives.",
+      "instructions": "GPT asks users to rank the selected objectives from 1 (most important) to 3 (least important)."
+    },
+    {
+      "id": 3,
+      "name": "Objective Comparison",
+      "description": "Compare selected objectives to past or existing objectives and think if they are aligned to future trends (e.g. sustainability, climate change).",
+      "instructions": "GPT asks users to think about the relationship between the selected objectives and past or existing objectives, and if they are aligned to future trends (e.g. sustainability, climate change)."
+    },
+    {
+      "id": 4,
+      "name": "Tradeoff Analysis",
+      "description": "Understand trade-offs between selected objectives.",
+      "instructions": [
+        "Define which objectives align or contrast using the format: Objective 1 - Objective 2: ++ (very aligned), + (aligned), 0 (no relationship), - (contrasting), -- (very contrasting).",
+        "GPT explains how this exercise helps users understand trade-offs and compromises in design."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Reflection on Impact",
+      "description": "Reflect on how prioritized objectives affect stakeholders, products, and the environment.",
+      "instructions": [
+        "GPT asks users self-reflection questions based on their chosen priorities and relationships between objectives.",
+        "GPT encourages independent reflection but offers support and follow-up questions if needed."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Objective Decomposition",
+      "description": "Develop objectives into sub-objectives using hierarchical decomposition.",
+      "instructions": [
+        "GPT asks users which objectives they want to develop further into sub-objectives.",
+        "GPT explains how to break down the main objectives into smaller, actionable sub-objectives.",
+        "GPT suggests users to consider old and existing objectives, and future possible objectives."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Product Requirement Development",
+      "description": "Develop product requirements based on relevant regulations and standards.",
+      "instructions": [
+        "GPT asks users to choose one sub-objective and search for relevant regulations.",
+        "GPT provides guidance on phrasing queries to find useful regulatory information."
+      ]
+    }
+  ],
+  "knowledge_base": {
+    "StepOverview": {
+      "Introduction": "Every product has specific goals such as safety, cost, and innovation, which may sometimes conflict (e.g., safety vs. cost). In this step, you'll prioritize these goals as a designer through a series of exercises.",
+      "Exercises": [
+        {
+          "name": "Reflect on Impact",
+          "description": "Consider how prioritizing certain goals affects stakeholders, the product, and the environment."
+        },
+        {
+          "name": "Specify and Translate Goals",
+          "description": "Clearly define your goals and convert them into detailed product requirements by reviewing relevant regulations, directives, and standards.",
+          "purpose": "Ensure that your design aligns with both your priorities and industry guidelines."
+        }
+      ]
+    },
+    "ProductObjectives": [
+      {
+        "id": 1,
+        "objective": "Safety",
+        "description": "Ensuring product safety during design, production, and use"
+      },
+      {
+        "id": 2,
+        "objective": "Cost Efficiency",
+        "description": "Optimizing production and operational costs without compromising quality"
+      },
+      {
+        "id": 3,
+        "objective": "Product Performance",
+        "description": "Ensuring high-quality performance and functionality from initial use through the product's lifespan, including under varying environmental conditions"
+      },
+      {
+        "id": 4,
+        "objective": "Durability",
+        "description": "Maximizing the product's lifespan through robust materials and design, reducing the need for replacements and minimizing wear over time"
+      },
+      {
+        "id": 5,
+        "objective": "Innovation",
+        "description": "Incorporating new features and technologies that enhance functionality and user experience across different iterations of the product's life cycle"
+      },
+      {
+        "id": 6,
+        "objective": "Usability",
+        "description": "Ensuring ease of use from initial purchase through the product's entire life cycle, including maintenance and potential upgrades"
+      },
+      {
+        "id": 7,
+        "objective": "Environmental Impact",
+        "description": "Reducing the product's environmental footprint by considering sustainable materials, manufacturing processes, and end-of-life recycling or disposal options"
+      },
+      {
+        "id": 8,
+        "objective": "Aesthetic Appeal",
+        "description": "Ensuring the product maintains visual appeal over time, even with wear and tear, making it desirable throughout its entire life cycle"
+      },
+      {
+        "id": 9,
+        "objective": "Scalability",
+        "description": "Facilitating efficient mass production and distribution while maintaining quality and allowing for adaptability in future product versions"
+      },
+      {
+        "id": 10,
+        "objective": "Cultural Acceptance",
+        "description": "Ensuring product design and features are relevant and accepted across diverse cultural markets from launch through long-term use"
+      }
+    ],
+    "HierarchicalDecompositionMethod": {
+      "generalProcess": [
+        "Start with the main goal.",
+        "Break it down into major components or areas.",
+        "Further divide each component into smaller, actionable tasks."
+      ],
+      "example": {
+        "mainGoal": "Creating the Safest Bike Ever",
+        "majorAreas": [
+          "Bike components (e.g., braking system, frame durability, rider protection)",
+          "User education and training",
+          "Continuous improvement"
+        ],
+        "smallComponents": {
+          "ContinuousImprovement": {
+            "ImplementFeedbackMechanism": {
+              "steps": [
+                "Set up user feedback channels.",
+                "Review feedback regularly to improve the product."
+              ]
+            },
+            "AnalyzeAccidentDataForImprovements": {
+              "steps": [
+                "Collect and analyze real-world accident data.",
+                "Use insights to refine design and enhance safety features."
+              ]
+            }
+          },
+          "UserEducationAndTraining": {
+            "CreateInstructionalMaterials": {
+              "steps": [
+                "Develop clear and concise user manuals.",
+                "Include safety guidelines and best practices."
+              ]
+            },
+            "OfferSafetyWorkshops": {
+              "steps": [
+                "Organize hands-on safety training sessions.",
+                "Provide demonstrations of safe product use."
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
