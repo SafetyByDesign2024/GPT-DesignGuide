@@ -1,0 +1,293 @@
+{
+  "steps": [
+    {
+      "id": 1,
+      "title": "Gather User Background",
+      "description": "Ask questions to gather user background information",
+      "reference": "knowledge_base/background_questions"
+    },
+    {
+      "id": 2,
+      "title": "Recommend steps",
+      "description": "Recommend steps based on the chosen focus",
+      "reference": "knowledge_base/Recommend_steps"
+    }
+  ],
+  "knowledge_base": {
+    "background_questions": [
+      {
+        "id": 1,
+        "question": "What project related to safety are you currently working on?"
+      },
+      {
+        "id": 2,
+        "question": "Now that you understand the GPT's capabilities, would you like to identify a specific focus area for your safety design process?",
+        "options": [
+          {
+            "title": "Human-Product Interaction",
+            "description": "Gain insights into human interactions with products and their environmental impact"
+          },
+          {
+            "title": "Technology Impact",
+            "description": "Explore how technology affects people and the surrounding environment"
+          },
+          {
+            "title": "Environmental Analysis",
+            "description": "Analyze environmental factors and their effects on humans and products"
+          },
+          {
+            "title": "Functional Considerations",
+            "description": "Delve into functional considerations, exploring how different components and systems work together to fulfill the product's purpose"
+          },
+          {
+            "title": "Technical Components",
+            "description": "Examine technical components and systems"
+          },
+          {
+            "title": "Operational Processes",
+            "description": "Investigate operational processes and procedures"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "What industry do you work in or are you studying (e.g., construction, manufacturing, healthcare)?"
+      },
+      {
+        "id": 4,
+        "question": "Do you have prior experience related to safety management or risk assessment?"
+      }
+      
+    ],
+    "Recommend_steps": [
+      {
+        "condition": "if_choice_equals",
+        "value": "Human-Product Interaction",
+        "proceed_to": "recommendations/human_product_interaction",
+        "question": "What steps do you want to take?"
+      },
+      {
+        "condition": "if_choice_equals",
+        "value": "Technology Impact",
+        "proceed_to": "recommendations/technology_impact",
+        "question": "What steps do you want to take?"
+      },
+      {
+        "condition": "if_choice_equals",
+        "value": "Environmental Analysis",
+        "proceed_to": "recommendations/environmental_analysis",
+        "question": "What steps do you want to take?"
+      },
+      {
+        "condition": "if_choice_equals",
+        "value": "Functional Considerations",
+        "proceed_to": "recommendations/functional_considerations",
+        "question": "What steps do you want to take?"
+      },
+      {
+        "condition": "if_choice_equals",
+        "value": "Technical Components",
+        "proceed_to": "recommendations/technical_components",
+        "question": "What steps do you want to take?"
+      },
+      {
+        "condition": "if_choice_equals",
+        "value": "Operational Processes",
+        "proceed_to": "recommendations/operational_processes",
+        "question": "What steps do you want to take?"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "title": "functional_considerations",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Stakeholders and their needs",
+          "description": "Identify stakeholder needs and transform into product requirements."
+        },
+        {
+          "number": 2,
+          "title": "System concept, system definition and system environment",
+          "description": "Define product functions, technical requirements, and operation. Understand environmental influences on the product."
+        },
+        {
+          "number": 3,
+          "title": "System (safety) objectives",
+          "description": "Prioritize competing product goals and set achievable objectives based on standards and regulations."
+        },
+        {
+          "number": 4,
+          "title": "Safety risk assessment and acceptance criteria",
+          "description": "Identify, evaluate, and assess hazards and risks associated with safety failures."
+        },
+        {
+          "number": 5,
+          "title": "Specification of system (safety) functions and requirements",
+          "description": "Define functions and requirements to minimize identified risks."
+        }
+      ]
+    },
+    {
+      "title": "human_product_interaction",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Stakeholders and their needs",
+          "description": "Identify stakeholder needs and transform into product requirements."
+        },
+        {
+          "number": 2,
+          "title": "System concept, system definition and system environment",
+          "description": "Define product functions, technical requirements, and operation. Understand environmental influences on the product."
+        },
+        {
+          "number": 4,
+          "title": "Safety risk assessment and acceptance criteria",
+          "description": "Identify, evaluate, and assess hazards and risks associated with safety failures."
+        },
+        {
+          "number": 11,
+          "title": "Operation and required performance",
+          "description": "Concern about how your product can be used or misused. What are the scenarios?"
+        },
+        {
+          "number": 12,
+          "title": "Maintenance, support, faults and logistics",
+          "description": "Investigate post-use product maintenance."
+        },
+        {
+          "number": 13,
+          "title": "Human factors and culture",
+          "description": "Adapt product for different cultures and countries."
+        }
+      ]
+    },
+    {
+      "title": "technology_impact",
+      "steps": [
+        {
+          "number": 2,
+          "title": "System concept, system definition and system environment",
+          "description": "Define product functions, technical requirements, and operation. Understand environmental influences on the product."
+        },
+        {
+          "number": 4,
+          "title": "Safety risk assessment and acceptance criteria",
+          "description": "Identify, evaluate, and assess hazards and risks associated with safety failures."
+        },
+        {
+          "number": 5,
+          "title": "Specification of system (safety) functions and requirements",
+          "description": "Define functions and requirements to minimize identified risks."
+        },
+        {
+          "number": 6,
+          "title": "Architecting a safe system",
+          "description": "Organize sub-systems into product architecture."
+        },
+        {
+          "number": 7,
+          "title": "System (safety) design",
+          "description": "Integrate sub-systems to create the completed product."
+        },
+        {
+          "number": 9,
+          "title": "Production, integration, test and validation",
+          "description": "Explore production settings and testing procedures."
+        }
+      ]
+    },
+    {
+      "title": "environmental_analysis",
+      "steps": [
+        {
+          "number": 2,
+          "title": "System concept, system definition and system environment",
+          "description": "Define product functions, technical requirements, and operation. Understand environmental influences on the product."
+        },
+        {
+          "number": 4,
+          "title": "Safety risk assessment and acceptance criteria",
+          "description": "Identify, evaluate, and assess hazards and risks associated with safety failures."
+        },
+        {
+          "number": 9,
+          "title": "Production, integration, test and validation",
+          "description": "Explore production settings and testing procedures."
+        },
+        {
+          "number": 11,
+          "title": "Operation and required performance",
+          "description": "Concern about how your product can be used or misused. What are the scenarios?"
+        },
+        {
+          "number": 15,
+          "title": "Retirement and disposal or reuse",
+          "description": "Plan for product end-of-life considerations."
+        }
+      ]
+    },
+    {
+      "title": "technical_components",
+      "steps": [
+        {
+          "number": 6,
+          "title": "Architecting a safe system",
+          "description": "Organize sub-systems into product architecture."
+        },
+        {
+          "number": 7,
+          "title": "System (safety) design",
+          "description": "Integrate sub-systems to create the completed product."
+        },
+        {
+          "number": 8,
+          "title": "Residual safety risk assessment and acceptance",
+          "description": "Evaluate remaining risks and product acceptability."
+        },
+        {
+          "number": 9,
+          "title": "Production, integration, test and validation",
+          "description": "Explore production settings and testing procedures."
+        },
+        {
+          "number": 10,
+          "title": "Packaging, transportation, installation, certification and preparation for the operation",
+          "description": "Prepare product for use and distribution."
+        }
+      ]
+    },
+    {
+      "title": "operational_processes",
+      "steps": [
+        {
+          "number": 11,
+          "title": "Operation and required performance",
+          "description": "Concern about how your product can be used or misused. What are the scenarios?"
+        },
+        {
+          "number": 12,
+          "title": "Maintenance, support, faults and logistics",
+          "description": "Investigate post-use product maintenance."
+        },
+        {
+          "number": 13,
+          "title": "Human factors and culture",
+          "description": "Adapt product for different cultures and countries."
+        },
+        {
+          "number": 14,
+          "title": "Safety risk monitoring, control, and communication",
+          "description": "Plan for unexpected failures."
+        },
+        {
+          "number": 15,
+          "title": "Retirement and disposal or reuse",
+          "description": "Plan for product end-of-life considerations."
+        }
+      ]
+    }
+  ]
+}
